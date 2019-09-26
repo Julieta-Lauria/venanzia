@@ -1,0 +1,661 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka&display=swap');
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+@import "normalize.css";
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+/* VERSION MOBILE */
+/* HEADER */
+
+.main-nav{
+  display: none;
+}
+
+.header-container{
+  height:100px;
+  display: flex;
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.toggle-nav {
+    background-color: black;
+    padding:10px;
+    display:block;
+    margin:auto;
+    width:40px;
+    text-align:center;
+    margin-bottom:20px;
+    font-size: 2em;
+}
+
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+
+.main-header img{
+  width:200px;
+  display:block;
+  margin:15px auto 30px;
+}
+
+.mobile-search{
+  background-color: black;
+  padding-bottom:10px;
+}
+
+.mobile-fieldset{
+  border: none;
+  width:350px;
+  margin:0 auto;
+}
+
+.mobile-search-input,
+.tablet-search-input{
+  width:80%;
+  line-height: 30px;
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid #E1BD43;
+  padding-left:3%;
+}
+
+.mobile-search-button,
+.tablet-search-button{
+  background-color: black;
+  border:none;
+}
+
+.mobile-search-icon,
+.tablet-search-icon{
+  font-size: 30px;
+}
+
+.tablet-search{
+  display:none;
+}
+
+.login-register{
+  display: none;
+}
+
+/* --------------- ARTICULO CATEGORIAS ------------ */
+
+.lista-categorias{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-articulo-categoria{
+  /* width: 298px; */
+  width:100%;
+  height: 220px;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.container-articulo-categoria strong{
+  width: 100%;
+  background-color: rgba(87, 87, 87, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+  transition: background-color .5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -52%);
+}
+
+.cat1{
+  background-image: url(../img/categoria-botas.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+.cat2{
+  background-image: url(../img/categoria-zapatos.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+.cat3{
+  background-image: url(../img/categoria-sandalias.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+.cat4{
+  background-image: url(../img/categoria-zapatillas.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+/* --------------- /VISTA DE PRODUCTOS INDIVIDUALES EN EL HOME ------------ */
+.h3-home{
+  font-size: 1.2em;
+  width:100%;
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.products-container{
+  width:90%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product{
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom:10%;
+  justify-content: center;
+}
+
+.product-photo{
+  height:120px;
+  width:140px;
+}
+
+.product-price{
+  width:100%;
+  padding-left:25%;
+}
+
+
+.button-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top:10%;
+  margin-bottom:10%;
+}
+
+.product-button{
+  margin:0 auto;
+  text-transform: uppercase;
+  line-height: 3;
+  width:85%;
+  background-color: black;
+  color:white;
+  letter-spacing: 2px;
+  font-family: 'Vidaloka', sans-serif;
+  border:1px solid black;
+  border-radius:4%;
+  font-size:0.9em;
+}
+
+.product-button:hover{
+  background-color: #E1BD43;
+  border: none;
+}
+
+/************** VIDEO *************/
+.video{
+  width:100%;
+  height: 240px;
+}
+
+
+/************** INSTAGRAM *************/
+.h3-instagram{
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: 'Vidaloka', serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.insta-container{
+  text-align: center;
+}
+
+/************** INSTAGRAM FEED *************/
+#instafeed {
+  display: flex;
+  flex-direction: row;
+}
+
+#instafeed img{
+  width:100%;
+}
+
+#instafeed a{
+  color:black;
+  text-decoration: none;
+  font-family: 'Open sans', sans-serif;
+  font-size:12px;
+}
+
+
+/* INICIO STYLES del FOOTER */
+.footer_ul{
+/* Estilo de las listas usadas en el footer */
+  margin: 0;
+  /* overflow:hidden; */
+  list-style-type: none;
+  padding: 5px;
+}
+
+.footer_ul a{
+/* Estilo de los links en el footer */
+  text-decoration:none;
+  color: inherit;
+  font-family: inherit;
+}
+.footer_ul a:hover {
+/* Estilo de los links al pasarles el mouse en el footer */
+  color: #E1BD43;
+  text-decoration: none;
+}
+.footer_iconos li{
+/* Estilos de los iconos usados en el footer */
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 0px 5px;
+}
+.footer_container{
+/* Estilo del contenedor del footer */
+  margin-top:10%;
+  background-color:black;
+  color:white;
+  display:flex;
+  flex-wrap:wrap;
+  font-size: 13px;
+  line-height : 18px;
+  padding: 30px 15px 30px;
+}
+.footer_titulos{
+  /* Estilos de los titulos del footer */
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size: 14px;
+  padding: 5px 0px 5px;
+  margin-bottom: 7px;
+  border-bottom: solid #E1BD43 2px;
+}
+.footer_ayuda, .footer_miCuenta, .footer_contacto, .footer_social{
+/* Estilos de las 4 cajas dentro del contenedor del footer */
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.footer_newsletter, .footer_newsletter input {
+/* Estilos para el input del newsletter en footer */
+  display:flex;
+  flex-grow: 1;
+  padding: 5px 2px 5px;
+  color:inherit;
+  outline-color: #E1BD43;
+}
+.footer_marca a{
+  display:flex;
+  align-items: center;
+  padding-bottom: 15px;
+  justify-content:space-around;
+}
+.footer_marca img{
+  width: 160px;
+  height: auto;
+}
+.footer_creditos{
+/* Estilo del contenedor de los creditos al pie */
+  background-color:#E1BD43;
+  color: white;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 1px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+}
+
+.footer-creditos p{
+  padding-top:3px;
+}
+
+/* FIN Styles del FOOTER */
+
+
+/* --------------- /INICIO VERSION TABLET ------------ */
+
+@media only screen and (min-width:600px){
+
+  /* --------------- /HEADER ------------ */
+  .main-nav{
+    height:60px;
+  }
+
+  .mobile-search{
+    display: none;
+  }
+
+
+  .header-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tablet-search{
+    display: inline-block;
+    width:30%;
+  }
+
+  .tablet-fieldset{
+    border: none;
+    padding-top:25px;
+    padding-left:15px;
+  }
+
+
+  .banner img{
+    display:inline-block;
+    width:40%;
+  }
+
+  .login-register{
+    display: inline-block;
+    width:30%;
+    padding-top:25px;
+  }
+
+  .carrito{
+    width:100%;
+    text-align: center;
+  }
+
+  .span-carrito{
+    display: none;
+  }
+
+  .login-register a{
+    font-size: 0.9em;
+    color: #E1BD43;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .login-register span{
+    font-size: 0.9em;
+    color: #E1BD43;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .toggle-nav{
+    display:none;
+  }
+
+  .main-nav{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .main-nav a{
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    text-transform: uppercase;
+    display:block;
+    text-align: center;
+    padding:15px 0 15px;
+    margin-bottom:2px;
+  }
+
+  .main-nav a:hover{
+    border-bottom: 3px solid #E1BD43;
+    transition: 300ms all ease;
+    text-decoration: none;
+    background-color: white;
+    color:black;
+  }
+
+  .main-nav ul{
+    width:75%;
+    overflow: hidden;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .main-nav li{
+    float:left;
+    width:15.25%;
+  }
+
+
+/* --------------- /HEADER ------------ */
+  .container-articulo-categoria{
+    height:400px;
+}
+
+  .container-articulo-categoria strong{
+    font-size: 35px;
+}
+
+/* --------------- /VISTA DE PRODUCTOS-HOME ------------ */
+  .mobile-main-nav{
+    display: : none;
+}
+
+/************** INSTAGRAM FEED *************/
+#instafeed {
+  display: flex;
+  flex-direction: row;
+}
+
+#instafeed img{
+  width:100%;
+}
+
+/* --------------- /VISTA DE PRODUCTOS INDIVIDUALES EN EL HOME ------------ */
+.h3-home{
+  font-size: 2em;
+}
+
+
+.products-container{
+  width:90%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom:10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-photo{
+  height:140px;
+  width:160px;
+}
+
+.product-button{
+  width:60%;
+}
+
+.product-price{
+  width:100%;
+  padding-left:0;
+}
+
+/************** VIDEO *************/
+.video{
+  width:100%;
+  height: 430px;
+}
+
+/* --------------- /FIN VERSION TABLET ------------ */
+
+
+  @media (min-width:801px) {
+
+/* --------------- /HEADER ------------ */
+    .container{
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .header-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .main-header img{
+      width:280px;
+      margin-right:0;
+    }
+
+    .tablet-search{
+      display: inline-block;
+      width:20%;
+    }
+
+    .banner img{
+      display:inline-block;
+      width:40%;
+    }
+
+    .login-register{
+      display: inline-block;
+      width:40%;
+      padding-top:40px;
+      padding-right:20px;
+      text-align: right;
+    }
+
+    .carrito{
+      display: inline;
+    }
+
+    .span-carrito{
+      display: inline;
+    }
+
+    .toggle-nav{
+      display:none;
+    }
+
+    .main-nav ul{
+      overflow: hidden;
+      margin-bottom:3.5%;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .main-nav li{
+      float:left;
+      width:15.25%;
+    }
+
+/* --------------- /CATEGORIAS ------------ */
+    .lista-categorias{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-articulo-categoria strong{
+      width: 99%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container-articulo-categoria{
+        width: 24%;
+        height: 300px;
+    }
+
+    .container-articulo-categoria strong{
+      font-size: 25px;
+    }
+
+    /* --------------- /VISTA DE PRODUCTOS INDIVIDUALES EN EL HOME ------------ */
+
+    .products-container{
+      width:95%;
+    }
+
+    .product{
+      width:25%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom:10%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-photo{
+      height:180px;
+      width:220px;
+    }
+
+    .product-button{
+      width:40%;
+    }
+
+    .button-container{
+      margin-top:2%;
+    }
+
+    /************** VIDEO *************/
+    .video{
+      display: block;
+      margin:0 auto;
+      width:75%;
+      height: 430px;
+      margin-bottom:7%;
+    }
+
+
+
+    /************** INSTAGRAM FEED *************/
+    #instafeed {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5px;
+    }
+
+
+    #instafeed a{
+      color:black;
+      text-decoration: none;
+      font-family: 'Open sans', sans-serif;
+      font-size:12px;
+    }
